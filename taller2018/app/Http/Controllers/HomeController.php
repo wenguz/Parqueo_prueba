@@ -28,4 +28,9 @@ class HomeController extends Controller
 */
         return view('home');
     }
+    public function gmaps()
+    {
+     $locations=DB::table('location')->get();
+     return view('gmpas',compact('locations'));
+    }
 }
