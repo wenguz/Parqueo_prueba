@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -30,7 +31,7 @@ class HomeController extends Controller
     }
     public function gmaps()
     {
-     $locations=DB::table('location')->get();
-     return view('gmpas',compact('locations'));
+     $locations=DB::table('locations')->get();
+     return view('home',compact('locations'));
     }
 }

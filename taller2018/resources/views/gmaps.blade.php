@@ -42,7 +42,7 @@
 <script type="text/javascript">
 
 
-    var locations = <?php print_r(json_encode($locations)) ?>;
+    var locations = <?php print_r($locations) ?>;
 
 
     var mymap = new GMaps({
@@ -56,7 +56,7 @@
         zoom:6
 
     });
-
+/*
 
     $.each( locations, function( index, value ){
 
@@ -70,13 +70,14 @@
 
             click: function(e) {
 
-                alert('This is '+value.city+', gujarat from India.');
+                alert('Esta es  '+value.city+', gujarat from India.');
 
             }
 
         });
 
     });
+    */
 </script>
 </body>
 </html>
