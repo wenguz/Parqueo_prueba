@@ -64,7 +64,7 @@ class RegisterController extends Controller
      * @return \App\User
      */
 
-    /*ES UN INSERT PARA LA TABLA USER*/
+    /*ES UN INSERT PARA LA TABLA USER. query builder*/
     protected function create(array $data)
     {
         $user= User::create([
